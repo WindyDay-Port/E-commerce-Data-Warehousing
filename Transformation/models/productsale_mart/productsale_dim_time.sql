@@ -19,4 +19,4 @@ with productsale_dim_time as (
 
 )
 
-select * from dim_time
+select * from productsale_dim_time

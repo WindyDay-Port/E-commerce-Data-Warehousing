@@ -21,4 +21,4 @@ with orderline_dim_customer as (
 
 )
 
-select * from dim_customer
+select * from orderline_dim_customer
