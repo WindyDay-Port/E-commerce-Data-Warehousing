@@ -6,7 +6,8 @@ with required_field as (
            orderID as time_id,
            shipmentID as delivery_id,
            total_amount,
-           quantity
+           quantity,
+           timestamp
     
     from {{ ref('source_table')}}
 ),
@@ -29,7 +30,8 @@ fact_orderline as (
            required_field.time_id,
            required_field.total_amount,
            required_field.quantity,
-           volume.product_count
+           volume.product_count,
+           count(required_field.order_id) over( partition by cast(required_field.timestamp as date)) as order_volume
     
     from required_field 
     
