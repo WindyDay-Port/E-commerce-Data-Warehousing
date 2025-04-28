@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+# you shouldn't commit these into source control
+# these are the default directory names, adjust/add to fit your needs
+target/
+dbt_packages/
+logs/
+=======
 config.yaml
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
@@ -175,3 +182,4 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+>>>>>>> 7a0211e5c40df3b7bf143d1ebfc8582e270e847b

@@ -1,0 +1,14 @@
+version: 2
+
+sources: 
+  - name: shopsphere_raw 
+    database: my-first-dbt-project-441102
+    schema: Data_warehousing 
+    tables:
+      - name: staging 
+    
+  - name: shopsphere_cleaned
+    database: my-first-dbt-project-441102
+    schema: MyProject
+    tables:
+      - name: source_table
