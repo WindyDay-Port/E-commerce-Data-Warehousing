@@ -12,4 +12,4 @@ with productsale_dim_payment as (
     from {{ ref('source_table') }}
 )
 
-select * from dim_payment
+select * from productsale_dim_payment

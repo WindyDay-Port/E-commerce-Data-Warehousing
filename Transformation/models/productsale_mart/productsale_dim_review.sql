@@ -12,4 +12,4 @@ with productsale_dim_review as (
     from {{ ref('source_table') }}
 )
 
-select * from dim_review
+select * from productsale_dim_review

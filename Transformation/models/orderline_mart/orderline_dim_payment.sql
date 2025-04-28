@@ -12,4 +12,4 @@ with orderline_dim_payment as (
     from {{ ref('source_table') }}
 )
 
-select * from dim_payment
+select * from orderline_dim_payment

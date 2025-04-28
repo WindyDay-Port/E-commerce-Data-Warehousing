@@ -19,4 +19,4 @@ with orderline_dim_time as (
 
 )
 
-select * from dim_time
+select * from orderline_dim_time

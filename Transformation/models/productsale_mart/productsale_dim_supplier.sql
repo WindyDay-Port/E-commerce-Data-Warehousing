@@ -16,4 +16,4 @@ with productsale_dim_supplier as (
     from {{ ref('source_table') }}
 )
 
-select * from dim_supplier
+select * from productsale_dim_supplier

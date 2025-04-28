@@ -21,4 +21,4 @@ with productsale_dim_customer as (
 
 )
 
-select * from dim_customer
+select * from productsale_dim_customer

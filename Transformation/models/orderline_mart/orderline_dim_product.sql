@@ -13,4 +13,4 @@ with orderline_dim_product as (
 
 )
 
-select * from dim_product
+select * from orderline_dim_product

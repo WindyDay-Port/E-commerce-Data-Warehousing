@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
 with required_field as (
     select orderID as order_id,
            paymentID as payment_id,
@@ -23,7 +29,8 @@ volume as (
 ),
 
 fact_orderline as (
-    select required_field.order_id,
+    select GENERATE_UUID() as orderline_id,
+           required_field.order_id,
            required_field.customer_id,
            required_field.payment_id,
            required_field.product_id,
