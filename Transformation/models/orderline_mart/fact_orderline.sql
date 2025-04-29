@@ -30,7 +30,6 @@ volume as (
 
 fact_orderline as (
     select GENERATE_UUID() as orderline_id,
-           required_field.order_id,
            required_field.customer_id,
            required_field.payment_id,
            required_field.product_id,

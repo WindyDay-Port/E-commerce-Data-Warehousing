@@ -1,0 +1,33 @@
+
+  
+    
+
+    create or replace table `my-first-dbt-project-441102`.`MyProject`.`productsale_dim_customer`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with productsale_dim_customer as (
+    select customerID as customer_id,
+           first AS first_name,
+           middle AS middle_name,
+           last AS last_name,
+           email,
+           phone,
+           street,
+           province,
+           city,
+           country,
+           postal_code
+
+    from `my-first-dbt-project-441102`.`MyProject`.`source_table`
+
+)
+
+select * from productsale_dim_customer
+    );
+  

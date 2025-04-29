@@ -1,0 +1,6 @@
+SELECT 
+    payment_id,
+    count(payment_id)
+FROM `my-first-dbt-project-441102`.`MyProject`.`productsale_dim_payment`
+group by payment_id
+having count(payment_id) > 1
