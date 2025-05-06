@@ -5,6 +5,8 @@ This is the code repository that hold source code folders for the case study of 
 
 ![Outline diagram of the project.](images/outline.drawio.png)
 
+Note: If the represented diagram is blurred, click/choose the image directly for full observation capability. 
+
 ## Features
 
 ### Data source
