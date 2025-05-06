@@ -1,5 +1,5 @@
 # Shopsphere Data Warehousing
-This is the code repository that hold source code folders for the case study of Shopshere, an (artificial) multi-region e-commerce organization. It offers products across multiple fields like Electronics, Fashion, Home & Kitchen, and Health & Beauty. The pipeline extracts data from a pre-built data model hosted in MySQL, merges it into a unified table, and loads the result into BigQuery for further transformation and modeling using dbt Cloud.
+This is the code repository that hold source code folders for the case study of Shopsphere, an (artificial) multi-region e-commerce organization. It offers products across multiple fields like Electronics, Fashion, Home & Kitchen, and Health & Beauty. The pipeline extracts data from a pre-built data model hosted in MySQL, merges it into a unified table, and loads the result into BigQuery for further transformation and modeling using dbt Cloud.
 
 ## Project Architecture
 
