@@ -40,6 +40,15 @@ Data that was used for the project is generated through the use of [Faker packag
 - Exception handling and logging are implemented to capture errors.
 - Cleans up memory after each batch using `gc.collect()` to manage resources efficiently.
 
+### Serving layer
+
+Data is transformed right inside the warehouse and modeled into data marts that align with dimensional modeling principles:
+
+![Dimensional model for order-line data mart](images/Order_line.drawio.png)
+
+![Dimensional model for product-sale data mart](images/product_sale.drawio.png)
+
+
 ## Usage
 
 ### Prerequisites
