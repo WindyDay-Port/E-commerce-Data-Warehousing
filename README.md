@@ -89,7 +89,6 @@ Supposed that you have already created acounts for both BigQuery and dbt Cloud, 
 
 For the Python ETL layer, the whole pipeline can be invoked manually through executing the `execute.py` script that orchestrates the extraction, transformation, and loading processes.
 ```
-
 python Processing/execute.py
 ```
 Data is then loaded into BigQuery and uses the cloud vendor as a staging layer for further processing. Scheduled models inside dbt Cloud will run automatically based on job schedule configurations to transform data efficiently.
